@@ -35,3 +35,8 @@ Login with Laravel Breeze.
 Product Management: CRUD (name, description, price, image, category).
 
 Product Logs: Auto-track created/updated/deleted with admin ID + changes.
+Bonus: 
+ ●  Image upload for products 
+ ●  Search/filter products in admin view 
+ ●  Deployment is not optional — project must be deployed 
+ ●  Deployment on free hosting (e.g., Render, Laravel Forge, or shared host)
