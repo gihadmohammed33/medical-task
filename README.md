@@ -40,3 +40,42 @@ Bonus:
  ●  Search/filter products in admin view 
  ●  Deployment is not optional — project must be deployed 
  ●  Deployment on free hosting (e.g., Render, Laravel Forge, or shared host)
+
+ 👩‍⚕️ Admin Credentials
+
+Email: admin@example.com
+
+Password: password
+📂 Project Structure
+
+app/Models → Eloquent models (Product, Order, OrderItem, ProductLog)
+
+app/Http/Controllers → Controllers for customer & admin
+
+resources/views → Blade templates (cart, checkout, admin)
+
+database/migrations → DB schema migrations
+
+database/seeders → Test data seeding
+
+🔑 Key Features
+
+Customer side: Product browsing, Cart, Checkout, Order Confirmation
+
+Admin side: Breeze authentication, Product CRUD, Order management, Product logs
+
+Stock check at checkout
+
+Clean Blade views with responsive design
+
+🛠 Developer Notes
+
+Extendable via Observers (product logs already included).
+
+To add new product attributes:
+
+Update migration.
+
+Add field to $fillable in Product.php.
+
+Update views/forms accordingly.
