@@ -58,7 +58,8 @@ Route::middleware(['auth','admin'])->prefix('admin')->name('admin.')->group(func
     Route::resource('orders', OrderController::class)->only(['index','show']);
     Route::get('product-logs', [ProductLogController::class, 'index'])->name('product-logs.index');
 });
-
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
+    ->name('logout');
 
 // ----------------- Auth scaffolding -----------------
 require __DIR__.'/auth.php';
